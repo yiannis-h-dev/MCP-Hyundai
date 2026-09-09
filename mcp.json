@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "testMCP1": {
+      "type": "stdio",
+      "command": "./node_modules/.bin/tsx",
+      "cwd": "${workspaceFolder}",
+      "args": ["src/index.ts"],
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+      }
+    }
+  },
+  "inputs": []
+}

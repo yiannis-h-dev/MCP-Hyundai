@@ -1,0 +1,26 @@
+{
+  "name": "mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A simple Model Context Protocol server",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/node": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.0.0",
+    "dotenv": "^16.6.1",
+    "dotenv-expand": "^12.0.3",
+    "graphql-request": "^6.0.0",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
